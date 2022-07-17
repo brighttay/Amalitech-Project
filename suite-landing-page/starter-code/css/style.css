@@ -15,9 +15,13 @@
     font-family: 'Epilogue', sans-serif; 
 }
 body{
-    background-color: var(--secondary);
+    background-color: var(--paragraph-two);
+    /* overflow-x: hidden; */
 }
+/* DEFAULT */
 /* RE-USEABLE CLASS PROPERTIES */
+
+
 .btn{
     text-decoration: none;
     padding: 10px;
@@ -26,6 +30,7 @@ body{
     color: var(--paragraph-two);
 
 }
+
 .btn-ghoast{
     color: var(--primary);
     border: 1px solid var(--primary);
@@ -59,7 +64,7 @@ body{
 p{
     color: var(--paragraph-one);
 }
-/* END RE-USEABLE CLASS PROPERTIES */
+/* RE-USEABLE CLASS PROPERTIES END */
 
 
 /* MAIN CONTAINER */
@@ -80,15 +85,13 @@ nav{
   left: 0px;
   top: 20px;
 }
+
 .btn-nav{
     position: absolute;
     right: 0px;
     top: 20px;
 }
-
-
-
-/* END OF NAVIGATION SECTION */
+/* NAVIGATION SECTION END */
 
 
 /* FIRST SECTION */
@@ -106,18 +109,23 @@ nav{
 }
 
 h1{
-    font-weight: 700;
+    font-weight: 400;
     font-size: 72px;
     letter-spacing: -1px;
     line-height: 78px;
     color: var(--primary);
+    margin: 20px;
 }
 
+h1 span{
+    font-weight: 700;
+}
 .hero-text{
     padding-top: 40px;
-    width: 250px;
+    margin-left: 20px;
+    width: 300px;
     margin-bottom: 40px;
-    font-size: 400;
+    font-weight: 400;
     font-size: 18px;
     letter-spacing: 0px;
     line-height: 32px;
@@ -130,6 +138,18 @@ h1{
     top: 0px;
     z-index: -100;
     left: 485px;
+   
+} 
+    .image-1{
+        width: 340px;
+    }
+
+.hero-image-2{
+    display: none;
+}
+
+.image-3{
+    display: none;
 }
 
 aside{
@@ -153,20 +173,24 @@ h2{
     letter-spacing: -0.5px;
 
 }
-/* END FIRSTSECTION */
+/* FIRST SECTION END */
+
+/* SECOND SECTION */
 .second-section{
     position: relative;
     top: 200px;
 }
 
 .qoute-container{
-    background-color: #172339;
+    background-color: var(--primary);
     border-radius: 10px;
-    height:490px;
+    height:499px;
+    
 }
 blockquote {
     width: 50%;
     position: absolute;
+    top: 0px;
     right: 0px;
     padding: 100px;
     color: var(--paragraph-two);
@@ -177,14 +201,30 @@ blockquote {
 blockquote p, .second-section-h2 {
     color: #fff;
 }
-.qoute-container img{
+
+.gradient-background{
+    position: relative;
+    top: 100px;
+    left: -50px;
+}
+.jeremy-xl{
     position: absolute;
-    top: -100px;
+    top: -106px;
     bottom: 0px;
-    left: 100px;
+    left: 20px;
+    width: 370px;
+    z-index: 100;
+}
+.jeremy-l{
+    position: absolute;
+    display: none;
+
+}
+pattern-curved-line-2{
+    display: none;
 }
 .second-section-h2{
-    margin-top: 70px;
+    margin-top: 50px;
     margin-bottom: 10px;
     font-size: 3rem;
 }
@@ -192,20 +232,23 @@ cite{
     display: block;
 }
 figcaption{
-    margin-top: 50px;
+    margin-top: 10px;
 }
+
+/* SECOND SECTION END */
+/* MAIN CONTAINER END */
 
 /* FOOTER SECTION */
 footer{
     position: relative;
     bottom: 0px;
-    background-color: #F3EDE7;
+    background-color: var(--secondary);
     width: 100%;
     height: 400px;
     z-index: -100;
 }
 
-.logo-2{
+.footer-logo{
     position: absolute;
     left: 10%;
     bottom: 20%;
@@ -231,3 +274,4 @@ footer ul li{
     display: inline-block;
     margin-left: 10px;
 }
+/* FOOTER SECTION END */
