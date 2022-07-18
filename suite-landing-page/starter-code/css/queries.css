@@ -123,6 +123,12 @@
 }
 
 @media screen and (max-width:725px){
+    .gradient-background img{
+        position: absolute;
+        top: -200px;
+        left:150px;
+        width:400px
+    }
  
 
 .hero-text{
@@ -171,6 +177,8 @@ blockquote p{
 }
 
 @media screen and (max-width: 666px) {
+
+   
     h1{
         font-size: 50px;
         position: relative;
@@ -201,6 +209,7 @@ blockquote p{
 
     .main-container{
         width: 98%;
+        margin: auto;
     }
    
     .image-2{
@@ -254,7 +263,9 @@ blockquote p{
     
     .gradient-background img{
         position: absolute;
-        top: -200px
+        top: -200px;
+        left:80px;
+        width:400px
     }
 
     .pattern-curved-line-2{
@@ -268,3 +279,53 @@ blockquote p{
         top: 300px;
     }
  }
+
+ @media screen and (max-width: 460px) {
+
+
+            .gradient-background img{
+                position: absolute;
+                top: -180px;
+                left: 10px;
+                width:300px
+            }
+
+            .pattern-curved-line-2{
+                left: 49%;
+                height: 70px;
+                top: 300px
+            }
+
+            blockquote{
+                top: 200px;
+                margin-top: 50px;
+            }
+            .second-section-h2{
+                font-size: 30px;
+            }
+            h2{
+                font-size: 30px;
+                
+            }
+
+           
+
+            h1{
+                font-size: 40px;
+            }
+            .first-section-curv {
+                left: 100px;
+                width: 0px
+            }
+ }
+
+ @media screen and (max-width: 375px){
+    h1{
+        font-size: 30px;
+        
+    }
+
+ }
+
+
+ 

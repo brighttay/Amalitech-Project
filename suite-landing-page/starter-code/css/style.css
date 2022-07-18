@@ -8,16 +8,22 @@
 
     
 }
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;  
     font-family: 'Epilogue', sans-serif; 
 }
+html{
+    overflow-x: none; 
+    
+}
 body{
     background-color: var(--paragraph-two);
-    overflow-x: hidden; 
-    width: 100%
+   
+    
 }
 /* DEFAULT */
 /* RE-USEABLE CLASS PROPERTIES */
@@ -181,15 +187,16 @@ h2{
 .second-section{
     position: relative;
     top: 200px;
+    right: 0px;
 }
 
 .qoute-container{
     background-color: var(--primary);
     border-radius: 10px;
-    height:499px;
+   
     
 }
-blockqoute h2{
+blockquote h2{
     font-size: 80px;
 }
 blockquote {
