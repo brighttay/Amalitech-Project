@@ -16,7 +16,8 @@
 }
 body{
     background-color: var(--paragraph-two);
-    /* overflow-x: hidden; */
+    overflow-x: hidden; 
+    width: 100%
 }
 /* DEFAULT */
 /* RE-USEABLE CLASS PROPERTIES */
@@ -99,6 +100,7 @@ nav{
     position: relative;
     padding-top: 100px; 
     height: 700px;
+    
 }
 
 .first-section-curv{
@@ -187,14 +189,17 @@ h2{
     height:499px;
     
 }
+blockqoute h2{
+    font-size: 80px;
+}
 blockquote {
-    width: 50%;
+    width: 58%;
     position: absolute;
     top: 0px;
-    right: 0px;
-    padding: 100px;
+    right: -90px;
+    padding: 150px;
     color: var(--paragraph-two);
-    font-size: 20px;
+    font-size: 18px;
     line-height: 32px;
 }
 
@@ -202,11 +207,15 @@ blockquote p, .second-section-h2 {
     color: #fff;
 }
 
-.gradient-background{
-    position: relative;
-    top: 100px;
-    left: -50px;
+.pattern-curved-line-2{
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100px;
+    
 }
+
 .jeremy-xl{
     position: absolute;
     top: -106px;
@@ -224,9 +233,9 @@ pattern-curved-line-2{
     display: none;
 }
 .second-section-h2{
-    margin-top: 50px;
+    margin-top: -20px;
     margin-bottom: 10px;
-    font-size: 3rem;
+    font-size: 40px;
 }
 cite{
     display: block;
@@ -239,6 +248,7 @@ figcaption{
 /* MAIN CONTAINER END */
 
 /* FOOTER SECTION */
+
 footer{
     position: relative;
     bottom: 0px;

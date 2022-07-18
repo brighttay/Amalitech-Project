@@ -18,10 +18,16 @@
 
     
     blockquote {
-        width: 50%;
+        width: 54%;
         padding: 50px;
         font-size: 17px;
         font-weight: 400;
+        top: 100px;
+        right: -45px;
+    }
+    .pattern-curved-line-2{
+        left: 49%;
+        height: 80px;
     }
     
 }
@@ -84,6 +90,19 @@
     .image-2{
         height: 500px
     }
+
+    .pattern-curved-line-2{
+        left: 49%;
+        height: 70px;
+    }
+}
+
+
+@media screen and (max-width: 980px){
+    .pattern-curved-line-2{
+        left: 75%;
+        top: 45px
+    }
 }
 
 @media screen and (max-width: 862px){
@@ -96,9 +115,14 @@
        
         font-size: 40px;
     }
+    blockquote{
+        font-size: 15px;
+        top: 50px
+    }
+
 }
 
-@media screen and (max-width:722px){
+@media screen and (max-width:725px){
  
 
 .hero-text{
@@ -122,10 +146,15 @@
    
 
 }
+.pattern-curved-line-2{
+    left: 49%;
+    height: 70px;
+    top: 150px
+}
 
 blockquote{
     position: absolute;
-    top: 0px;
+    top: 100px;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
@@ -139,7 +168,7 @@ blockquote h2{
 blockquote p{
     padding-top: 20px;
 }
-
+}
 
 @media screen and (max-width: 666px) {
     h1{
@@ -159,7 +188,7 @@ blockquote p{
 
     }
     .hero-text{
-        width: 250px;
+        width: 350px;
         margin-left: 0;
         position: relative;
         top: -100px;
@@ -168,10 +197,8 @@ blockquote p{
         position: relative;
         top: -100px;
     }
-}
 
 
-@media screen and (max-width: 670px){
     .main-container{
         width: 98%;
     }
@@ -206,7 +233,7 @@ blockquote p{
 
     aside ul li{
         position: relative;
-        top: -100px;
+        top: -150px;
         left: 50%;
         display: block;
         width: 100%;
@@ -217,7 +244,7 @@ blockquote p{
 
     .jeremy-l{
         position: relative;
-        top: -1100px
+        top: -550px
     }
 
     .second-section{
@@ -225,14 +252,19 @@ blockquote p{
         top: 500px
     }
     
+    .gradient-background img{
+        position: absolute;
+        top: -200px
+    }
 
-}
-    /* first-section
-curv first-section-curv
+    .pattern-curved-line-2{
+        left: 49%;
+        height: 70px;
+        top: 120px
+    }
 
-btn btn-full
-hero-image
-hero-image-2 */
-}
-
-
+    footer{
+    
+        top: 300px;
+    }
+ }
