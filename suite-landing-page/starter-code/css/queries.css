@@ -18,18 +18,21 @@
         position: absolute;
         left: 0px;
         top:0px;
-        padding:1rem 0rem;
+        padding: 25px 20px;
         min-width: 30px;
        
     }
-
+        
     .btn-nav {
         position: absolute;
         right: 0px;
         top:0px;
-        padding:1rem 0rem;
-        font-size: 1rem;
-        line-height: 2rem;
+        margin: 25px 20px;
+        text-decoration: none;
+        border: 1px solid black;
+        padding: 10px;
+        color: black;
+        border-radius: 0.3rem;
     }
 /* SECTION ONE */
     h1{
@@ -41,8 +44,16 @@
 
     p.hero-text{
         padding: 25px 20px;
+        max-width: 350px;
     }
-
+    .btn-section-one{
+        margin: 25px 20px;
+        text-decoration: none;
+        border: 1px solid black;
+        padding: 10px;
+        color: black;
+        border-radius: 0.3rem;
+    }
     .hero-image{
         display: none;
     }
@@ -51,6 +62,7 @@
         display: block;
         max-width: 280px;
         margin: auto;
+        padding-top: 25px;
     }
 
     
@@ -67,7 +79,18 @@
     }
 
     /* SECTION TWO */
-
+    .second-section{
+        position: relative;
+        top:-200px;
+    }
+    .pattern-blur{
+        display: block;
+        max-width: 280px;
+        margin: auto;
+        position: relative;
+        top: 300px;
+        z-index: -100;
+    }
     .jeremy-image{
         display: none;
     }
@@ -78,11 +101,31 @@
         padding-top: 25px;
 
     }
-
+    .pattern-curved-line-2{
+         display: block;
+         max-width: 180px;
+         margin: 25px auto;
+         position: relative;
+         top: 60px;
+         padding: 25px;
+         
+         
+    }
     blockquote h2, blockquote p, blockquote figcaption{
         text-align: center;
-        padding: 25px 20px;
+        padding: 25px 20px 0px 20px;
 
+    }
+
+    blockquote{
+        background-color: aquamarine;
+        position: relative;
+        left: 0px;
+        right: 0px;
+        top: -100px;
+        z-index: -100;
+        padding-top: 25px;
+        padding-bottom: 50px ;
     }
 
 
@@ -90,7 +133,7 @@
         position: relative;
         right: 0px;
         left: 0px;
-        top: 0px;
+        top: -130px;
     }
 
     .footer-logo{
