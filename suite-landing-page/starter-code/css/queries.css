@@ -231,12 +231,12 @@
 
     
     .footer-background{
-        position: absolute;
+        position: relative;
         width: 100%;
         min-height: 500px;
         z-index: -200;
         background-color: #F3EDE7;
-        bottom: -1420px;
+        bottom: -370px;
     }
 
  }
@@ -347,6 +347,10 @@
         width: 200px;
     }
 
+    .footer-background{
+
+        bottom: -470px;
+    }
 
 
     
@@ -436,7 +440,7 @@
     
     footer{
        
-        top: 1200px;
+        top: 950px;
     }
 
 
@@ -457,11 +461,12 @@
         float: right;
     }
 
+
+
     .footer-background{
-        bottom: -1620px
+
+        bottom: -570px;
     }
-
-
 
  }
 
