@@ -1,9 +1,19 @@
- @media screen and (min-width:280px) {
+ 
+  @media all and (max-width:279px) {
+    *{
+        display: none;
+    }
+  }
+ @media all and (min-width:280px) {
     /* ROOT */
     *{
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+    }
+
+    body{
+        overflow-x: hidden;
     }
    /* NAVIGATION MANU*/
     nav{
@@ -35,11 +45,20 @@
         border-radius: 0.3rem;
     }
 /* SECTION ONE */
+    .first-section-curv img{
+        position: absolute;
+        top: 75px;
+        left: 140px;
+        width: 100px;
+        height: 30px;
+    }
+
     h1{
-        font-size: min(2em);
+        font-size: min(2rem);
         text-align: justify;
         width: 100%;
         padding-left: 20px;
+        
     }
 
     p.hero-text{
@@ -61,15 +80,19 @@
     .hero-image-s{
         display: block;
         max-width: 280px;
+        min-width: 280px;
         margin: auto;
         padding-top: 25px;
     }
 
     
     aside{
-        width: 50%;
-        margin: auto;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 100px auto;
         text-align: center;
+
     }
     aside ul li {
         list-style: none;
@@ -78,27 +101,36 @@
         
     }
 
+    .position-fix{
+        position: relative;
+        top: 100px
+    }
+
     /* SECTION TWO */
     .second-section{
         position: relative;
-        top:-200px;
+        top:0px;
+        max-height: 500px;
     }
     .pattern-blur{
         display: block;
         max-width: 280px;
         margin: auto;
         position: relative;
-        top: 300px;
+        top: 450px;
         z-index: -100;
     }
     .jeremy-image{
         display: none;
     }
     .jeremy-image-s{
+        position: absolute;
+        top: 500px;
+        left: 50%;
+        transform: translateX(-50%);
         display: block;
         max-width: 180px;
-        margin: auto;
-        padding-top: 25px;
+        padding-top: 0px;
 
     }
     .pattern-curved-line-2{
@@ -108,6 +140,7 @@
          position: relative;
          top: 60px;
          padding: 25px;
+        
          
          
     }
@@ -117,24 +150,28 @@
 
     }
 
+
     blockquote{
         background-color: aquamarine;
         position: relative;
         left: 0px;
         right: 0px;
-        top: -100px;
+        top: 450px;
         z-index: -100;
         padding-top: 25px;
-        padding-bottom: 50px ;
+        padding-bottom: 10px ;
+        min-height: 450px;
+        width: 100%;
     }
 
 
     footer{
         position: relative;
         right: 0px;
-        left: 0px;
-        top: -130px;
+        top: 750px;
+        left: 0px;    
     }
+
 
     .footer-logo{
         display: block;
@@ -147,7 +184,7 @@
     }
     footer ul{
        position: absolute;
-       top: 100px;
+       top: 90px;
        left: 50%;
        transform: translate(-50%);
     }
@@ -156,60 +193,283 @@
         margin: 20px 10px;
        
     }
+
+    
+    .footer-background{
+        position: absolute;
+        width: 100%;
+        height: 400px;
+        z-index: -200;
+        background-color: blueviolet;
+        bottom: -1420px;
+    }
+
  }
 
- @media screen and (min-width:551px) {
+ @media all and (min-width:551px) {
+    .first-section-curv img{
+        position: absolute;
+        top: 100px;
+        left: 270px;
+        width: 150px;
+        height: 30px;
+    }
+    h1{
+        font-size: min(3.5em);
+        padding: 20px 50px;
+    }
+
+    p.hero-text{
+        padding: 50px 50px;
+        max-width: 500px;
+        font-size: min(1.3rem);
+    }
+    .btn-section-one{
+        margin: 25px 0px 50px 50px;
+        
+    }
+
     .hero-image-s{
         display: none;
     }
     .hero-image-m{
+        position: absolute;
         display: block;
         max-width: 551px;
         padding: 20px;
-        margin: auto;
+        left: 50%;
+        transform: translateX(-50%);
 
+    }
+
+    aside{
+        position: absolute;
+        top: 600px;
+        width: 50%;
+        margin: auto;
+        text-align: center;
+       
+    }
+    aside ul li {
+        list-style: none;
+        display: inline-block;
+        position: relative;
+        top: 250px
+
+        
     }
 
     .jeremy-image-s{
         display: none;
     }
-   
 
     .jeremy-image-m{
+        position: absolute;
+        top: 500px;
+        left: 50%;
+        transform: translateX(-50%);
         display: block;
-        max-width: 551px;
-        margin: auto;
-        padding-top: 25px;
+        max-width: 250px;
+        padding-top: 0px;
 
     }
 
+    blockquote{
+        top: 500px;
+    }
+    footer{
+        top: 900px
+    }
+
+    .footer-logo{
+        display: inline-block;
+        position: absolute;
+        left: 100px;
+        top: 15px;
+        
+       
+    }
+    .copy-right{
+        text-align: center;
+        padding-top: 25px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        
+    }
+    footer ul{
+        position: absolute;
+        top:0px;
+        left: 100%;
+        transform: translateX(-100%);
+        width: 200px;
+    }
+
+
+
+    
  }
 
  
- @media screen and (min-width:727px) {
+ @media all and (min-width:831px) {
+    .first-section-curv img{
+        position: absolute;
+        top: 170px;
+        left: 240px;
+        width: 150px;
+        height: 30px;
+    }
+    h1{
+        font-size: min(3.5em);
+        text-align: justify;
+        width: 100%;
+        padding-left: 20px;
+        padding-top: 100px;
+    }
+
+    p.hero-text{
+        padding: 25px 10px;
+        max-width: 350px;
+        padding-top: 10px;
+        font-size: min(1.3rem);
+    }
+    .btn-section-one{
+        margin: 25px 0px 50px 10px;
+        
+    }
+  
     .hero-image-m{
         display: none;
     }
     .hero-image-l{
         display: block;
-        max-width: 727px;
+        max-width: 720px;
         padding: 20px;
-        margin: auto;
+        position: absolute;
+        top: 80px;
+        z-index: -100;
+        left: 320px;
+       
+    } 
+    
+    .quote-container{
+        position: relative;
+        top: 100px;
+        height: 500px;
     }
-
+    .pattern-blur{
+       position: absolute;
+       top: 550px;
+       width: 400px;
+       z-index: 100;
+    }
     .jeremy-image-m{
         display: none;
     }
-   
-
     .jeremy-image-l{
         display: block;
-        max-width: 727px;
-        margin: auto;
-        padding-top: 25px;
+        max-width: 327px;
+        position: absolute;
+        top: 418px;
+        float: left;
+    }
+
+    .second-section{
+        position: relative;
+        top:300px;
+    }
+
+    .pattern-curved-line-2{
+        position: absolute;
+        float: left;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 150px;
+        min-width: 0px
+        
+        
+    }
+
+    
+    footer{
+       
+        top: 950px;
+    }
+
+
+    blockquote h2{
+        text-align: left;
+        padding: 75px 0px 0px 50px;
+        font-size: 2.5rem;
+    }
+    blockquote p, blockquote figcaption{
+        padding: 50px 0px 0px 50px;
+        width: 400px;
+        text-align: left;
+        font-size: 20px;
 
     }
 
+    .quotes{
+        float: right;
+    }
+
+
+
+ }
+
+
+ @media all and (min-width:1115px){
+    .first-section-curv img{
+        position: absolute;
+        top: 170px;
+        left: 340px;
+        width: 150px;
+        height: 30px;
+    }
+    aside{
+        position: absolute;
+        top: 0px;
+        right: -800px;
+        margin: auto;
+        text-align: center;
+    }
+    aside ul li {
+        display: block;
+        font-size: 20px;
+        list-style: none;
+        padding-top: 50px; 
+    }
+    .hero-image-l{
+        left: 438px
+    }
+    p.hero-text{
+        position: relative;
+        left: 100px;
+    }
+    h1{
+        position: relative;
+        left: 100px;  
+    }
+    .btn-section-one{
+        position: relative;
+        left: 100px;  
+    }
+    blockquote{
+        max-width: 100%;
+        margin: auto;
+        border-radius: 5px;;
+        
+    }
+    .quote-container{
+        max-width: 98%;
+        margin: auto;
+    }
+
+    .logo{
+        left: 100px;
+    }
+    
  }
 
  
