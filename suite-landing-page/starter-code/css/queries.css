@@ -233,7 +233,7 @@
     .footer-background{
         position: absolute;
         width: 100%;
-        height: 400px;
+        height: 500px;
         z-index: -200;
         background-color: #F3EDE7;
         bottom: -1420px;
@@ -436,7 +436,7 @@
     
     footer{
        
-        top: 950px;
+        top: 1200px;
     }
 
 
@@ -455,6 +455,10 @@
 
     .quotes{
         float: right;
+    }
+
+    .footer-background{
+        bottom: -1620px
     }
 
 
