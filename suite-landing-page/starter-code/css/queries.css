@@ -2,9 +2,13 @@
   @media all and (max-width:279px) {
     *{
         display: none;
+        font-family: 'Epilogue', sans-serif;
     }
   }
  @media all and (min-width:280px) {
+
+    @import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700&display=swap');
+
     /* ROOT */
     *{
         margin: 0;
@@ -39,39 +43,60 @@
         top:0px;
         margin: 25px 20px;
         text-decoration: none;
-        border: 1px solid black;
+        border: 1px solid #172339;
         padding: 10px;
-        color: black;
+        color: #172339;
         border-radius: 0.3rem;
+        transition: 0.8s;
+        font-size: 18px;
+        font-weight: 400;
     }
+
+    .btn-nav:hover{
+        background-color: #172339;
+        color: #FAF8F6;
+    }
+
 /* SECTION ONE */
     .first-section-curv img{
         position: absolute;
         top: 75px;
-        left: 140px;
+        left: 110px;
         width: 100px;
         height: 30px;
     }
 
     h1{
-        font-size: min(2rem);
+        font-size: 25px;
         text-align: justify;
         width: 100%;
         padding-left: 20px;
+        color: #172339;
+        font-weight: 700;
         
     }
 
     p.hero-text{
         padding: 25px 20px;
         max-width: 350px;
+        font-size: 18px;
+        color: #49566D;
+        font-weight: 400;
     }
     .btn-section-one{
         margin: 25px 20px;
         text-decoration: none;
-        border: 1px solid black;
+        border: 1px solid #172339;
         padding: 10px;
-        color: black;
+        color: #FAF8F6;
         border-radius: 0.3rem;
+        font-size: 18px;
+        background-image: linear-gradient(#172339,#172339,#172339);
+        transition: 0.8s;
+    }
+    .btn-section-one:hover{
+        background-image: linear-gradient(to bottom right,#A060FF,#CB30E3,#FFA84E);
+        border: 1px solid transparent;
     }
     .hero-image{
         display: none;
@@ -97,6 +122,8 @@
     aside ul li {
         list-style: none;
         padding-top: 30px;
+        color: #172339;
+        font-weight: 700;
 
         
     }
@@ -144,6 +171,10 @@
          
          
     }
+
+    h2{
+        font-size: 20px;
+    }
     blockquote h2, blockquote p, blockquote figcaption{
         text-align: center;
         padding: 25px 20px 0px 20px;
@@ -152,7 +183,7 @@
 
 
     blockquote{
-        background-color: aquamarine;
+        background-color:#172339;
         position: relative;
         left: 0px;
         right: 0px;
@@ -162,6 +193,10 @@
         padding-bottom: 10px ;
         min-height: 450px;
         width: 100%;
+        color: #FAF8F6;
+        font-weight: 400;
+        letter-spacing: 0;
+        line-height: 21px;
     }
 
 
@@ -200,7 +235,7 @@
         width: 100%;
         height: 400px;
         z-index: -200;
-        background-color: blueviolet;
+        background-color: #F3EDE7;
         bottom: -1420px;
     }
 
@@ -210,13 +245,13 @@
     .first-section-curv img{
         position: absolute;
         top: 100px;
-        left: 270px;
+        left: 230px;
         width: 150px;
         height: 30px;
     }
     h1{
-        font-size: min(3.5em);
         padding: 20px 50px;
+        font-size: 48px;
     }
 
     p.hero-text{
@@ -254,6 +289,7 @@
         list-style: none;
         display: inline-block;
         position: relative;
+        padding: 5px;
         top: 250px
 
         
@@ -271,8 +307,14 @@
         display: block;
         max-width: 250px;
         padding-top: 0px;
-
     }
+
+
+    h2{
+        font-size: 47px;
+    }
+
+
 
     blockquote{
         top: 500px;
@@ -315,23 +357,24 @@
     .first-section-curv img{
         position: absolute;
         top: 170px;
-        left: 240px;
+        left: 340px;
         width: 150px;
         height: 30px;
     }
     h1{
-        font-size: min(3.5em);
+        font-size: 72px;
         text-align: justify;
         width: 100%;
         padding-left: 20px;
         padding-top: 100px;
+        color: #172339
     }
 
     p.hero-text{
-        padding: 25px 10px;
+        padding: 10px 20px 25px 25px;
         max-width: 350px;
-        padding-top: 10px;
-        font-size: min(1.3rem);
+        font-size: 18px;
+        color: #49566D;
     }
     .btn-section-one{
         margin: 25px 0px 50px 10px;
@@ -360,8 +403,8 @@
     .pattern-blur{
        position: absolute;
        top: 550px;
-       width: 400px;
-       z-index: 100;
+       width: 200px;
+      
     }
     .jeremy-image-m{
         display: none;
@@ -423,7 +466,7 @@
     .first-section-curv img{
         position: absolute;
         top: 170px;
-        left: 340px;
+        left: 420px;
         width: 150px;
         height: 30px;
     }
@@ -433,6 +476,7 @@
         right: -800px;
         margin: auto;
         text-align: center;
+        z-index: -200;
     }
     aside ul li {
         display: block;
