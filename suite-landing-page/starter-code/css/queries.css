@@ -124,10 +124,16 @@
     aside ul li {
         list-style: none;
         padding-top: 30px;
-        color: #172339;
         font-weight: 700;
+        text-transform: uppercase;
 
         
+    }
+    aside ul li h1{
+        color: #172339;
+    }
+    aside ul li p{
+        color: #49566D;
     }
 
     .position-fix{
@@ -282,7 +288,7 @@
     aside{
         position: absolute;
         top: 600px;
-        width: 50%;
+        width: 70%;
         margin: auto;
         text-align: center;
        
@@ -313,7 +319,7 @@
 
 
     h2{
-        font-size: 47px;
+        font-size: 40px;
     }
 
 
@@ -486,8 +492,8 @@
     }
     aside{
         position: absolute;
-        top: 0px;
-        right: -800px;
+        top: -80px;
+        right: -900px;
         margin: auto;
         text-align: center;
         z-index: -200;
