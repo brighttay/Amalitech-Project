@@ -1,551 +1,129 @@
  
-  @media all and (max-width:279px) {
-    *{
-        display: none;
-        font-family: 'Epilogue', sans-serif;
-       
-    }
-  }
- @media all and (min-width:280px) {
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Epilogue', sans-serif;
+}
 
-    @import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700&display=swap');
-
-    /* ROOT */
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        user-select: none;
-    }
-
-    body{
-        overflow-x: hidden;
-    }
-   /* NAVIGATION MANU*/
-    nav{
-        position: relative;
-        top: 0%;
-        left: 0%;
-        right: 100%;
-        min-height: 100px ;
-    }
-
-    .logo{
-        position: absolute;
-        left: 0px;
-        top:0px;
-        padding: 25px 20px;
-        min-width: 30px;
-       
-    }
-        
-    .btn-nav {
-        position: absolute;
-        right: 0px;
-        top:0px;
-        margin: 25px 20px;
-        text-decoration: none;
-        border: 1px solid #172339;
-        padding: 10px;
-        color: #172339;
-        border-radius: 0.3rem;
-        transition: 0.8s;
-        font-size: 18px;
-        font-weight: 400;
-    }
-
-    .btn-nav:hover{
-        background-color: #172339;
-        color: #FAF8F6;
-    }
-
-/* SECTION ONE */
-    .first-section-curv img{
-        position: absolute;
-        top: 75px;
-        left: 110px;
-        width: 100px;
-        height: 30px;
-    }
-
-    h1{
-        font-size: 25px;
-        text-align: justify;
-        width: 100%;
-        padding-left: 20px;
-        color: #172339;
-        font-weight: 700;
-        
-    }
-
-    p.hero-text{
-        padding: 25px 20px;
-        max-width: 350px;
-        font-size: 18px;
-        color: #49566D;
-        font-weight: 400;
-    }
-    .btn-section-one{
-        margin: 25px 20px;
-        text-decoration: none;
-        border: 1px solid #172339;
-        padding: 10px;
-        color: #FAF8F6;
-        border-radius: 0.3rem;
-        font-size: 18px;
-        background-image: linear-gradient(#172339,#172339,#172339);
-        transition: 0.8s;
-    }
-    .btn-section-one:hover{
-        background-image: linear-gradient(to bottom right,#A060FF,#CB30E3,#FFA84E);
-        border: 1px solid transparent;
-    }
-    .hero-image{
-        display: none;
-    }
-
-    .hero-image-s{
-        display: block;
-        max-width: 280px;
-        min-width: 280px;
-        margin: auto;
-        padding-top: 25px;
-    }
-
+nav{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
     
-    aside{
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        margin: 100px auto;
-        text-align: center;
+}
 
-    }
-    aside ul li {
-        list-style: none;
-        padding-top: 30px;
-        font-weight: 700;
-        text-transform: uppercase;
-
-        
-    }
-    aside ul li h1{
-        color: #172339;
-    }
-    aside ul li p{
-        color: #49566D;
-    }
-
-    .position-fix{
-        position: relative;
-        top: 100px
-    }
-
-    /* SECTION TWO */
-    .second-section{
-        position: relative;
-        top:0px;
-        max-height: 500px;
-    }
-    .pattern-blur{
-        display: block;
-        max-width: 280px;
-        margin: auto;
-        position: relative;
-        top: 650px;
-        z-index: -100;
-    }
-    .jeremy-image{
-        display: none;
-    }
-    .jeremy-image-s{
-        position: absolute;
-        top: 500px;
-        left: 50%;
-        transform: translateX(-50%);
-        display: block;
-        max-width: 180px;
-        padding-top: 0px;
-
-    }
-    .pattern-curved-line-2{
-         display: block;
-         max-width: 180px;
-         margin: 25px auto;
-         position: relative;
-         top: 60px;
-         padding: 25px;
-        
-         
-         
-    }
-
-    h2{
-        font-size: 20px;
-    }
-    blockquote h2, blockquote p, blockquote figcaption{
-        text-align: center;
-        padding: 25px 20px 0px 20px;
-
-    }
-
-
-    blockquote{
-        background-color:#172339;
-        position: relative;
-        left: 0px;
-        right: 0px;
-        top: 450px;
-        z-index: -100;
-        padding-top: 25px;
-        padding-bottom: 10px ;
-        min-height: 450px;
-        width: 100%;
-        color: #FAF8F6;
-        font-weight: 400;
-        letter-spacing: 0;
-        line-height: 21px;
-    }
-
-
-    footer{
-        position: relative;
-        right: 0px;
-        top: 750px;
-        left: 0px;    
-    }
-
-
-    .footer-logo{
-        display: block;
-        min-width: 30px;
-        margin: auto;
-    }
-    .copy-right{
-        text-align: center;
-        padding-top: 25px;
-    }
-    footer ul{
-       position: absolute;
-       top: 90px;
-       left: 50%;
-       transform: translate(-50%);
-    }
-    footer ul li{
-        display: inline-block;
-        margin: 20px 10px;
-       
-    }
-
+.btn-nav{
+    text-decoration: none;
+    padding: 10px;
+    width: 220px;
+    border: 1px solid #172339;
+    color: #172339;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 18px;
+    letter-spacing: -0.2px;
+    line-height: 32px;
+    font-weight: 700;
     
-    .footer-background{
-        position: relative;
-        width: 100%;
-        min-height: 500px;
-        z-index: -200;
-        background-color: #F3EDE7;
-        bottom: -370px;
-    }
+}
 
- }
+.btn-nav:hover{
+    background-color: #49566D;
+    color: #FAF8F6; 
+}
 
- @media all and (min-width:551px) {
-    .first-section-curv img{
-        position: absolute;
-        top: 100px;
-        left: 230px;
-        width: 150px;
-        height: 30px;
-    }
-    h1{
-        padding: 20px 50px;
-        font-size: 48px;
-    }
+.logo a img{
+    margin-top: 5px;
+    width: 100px;
+}
 
-    p.hero-text{
-        padding: 50px 50px;
-        max-width: 500px;
-        font-size: min(1.3rem);
-    }
-    .btn-section-one{
-        margin: 25px 0px 50px 50px;
-        
-    }
+.hero-image{
+    display: none;
+}
 
-    .hero-image-s{
-        display: none;
-    }
-    .hero-image-m{
-        position: absolute;
-        display: block;
-        max-width: 551px;
-        padding: 20px;
-        left: 50%;
-        transform: translateX(-50%);
+.first-section{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
 
-    }
+h1{
+    font-size: 48px;
+    line-height: 56px;
+    letter-spacing: -0.5px;
+    padding-bottom: 20px;
+    font-weight: 400;
+    color: #172339;
+}
+span{
+    font-weight: 700;
+}
 
-    aside{
-        position: absolute;
-        top: 600px;
-        width: 70%;
-        margin: auto;
-        text-align: center;
-       
-    }
-    aside ul li {
-        list-style: none;
-        display: inline-block;
-        position: relative;
-        padding: 5px;
-        top: 250px
+.hero-text{
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: 0px;
+    font-weight: 400;
+    padding-bottom: 20px;
+    color: #49566D;
+}
 
-        
-    }
+.btn-section-one{
+    text-decoration: none;
+    padding: 15px;
+    width: 350px;
+    background-color:#172339;
+    color: #FAF8F6;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 18px;
+    letter-spacing: -0.2px;
+    line-height: 32px;
+    font-weight: 700; 
+    margin-bottom: 20px;
+}
 
-    .jeremy-image-s{
-        display: none;
-    }
+.btn-section-one:hover{
+    background-image: linear-gradient(#A060FF,#CB30E3,#FFA84E);
+}
 
-    .jeremy-image-m{
-        position: absolute;
-        top: 500px;
-        left: 50%;
-        transform: translateX(-50%);
-        display: block;
-        max-width: 250px;
-        padding-top: 0px;
-    }
+.hero-image-s{
+    display: block;
+    margin-bottom: 20px;
+}
 
+aside ul li{
+    list-style: none;
+    display: block;
+    text-align: center;
+    margin-bottom: 40px;
+}
 
-    h2{
-        font-size: 40px;
-    }
+aside h2{
+    font-size: 72px;
+    line-height: 78px;
+    letter-spacing: -1px;
+    color: #172339;
+}
 
+aside p{
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: -0.2px;
+    text-transform: uppercase;
+    color: #49566D;
+}
 
-
-    blockquote{
-        top: 500px;
-    }
-    footer{
-        top: 900px
-    }
-
-    .footer-logo{
-        display: inline-block;
-        position: absolute;
-        left: 100px;
-        top: 15px;
-        
-       
-    }
-    .copy-right{
-        text-align: center;
-        padding-top: 25px;
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        
-    }
-    footer ul{
-        position: absolute;
-        top:0px;
-        left: 100%;
-        transform: translateX(-100%);
-        width: 200px;
-    }
-
-    .footer-background{
-
-        bottom: -470px;
-    }
-
-
-    
- }
-
- 
- @media all and (min-width:831px) {
-    .first-section-curv img{
-        position: absolute;
-        top: 170px;
-        left: 340px;
-        width: 150px;
-        height: 30px;
-    }
-    h1{
-        font-size: 72px;
-        text-align: justify;
-        width: 100%;
-        padding-left: 20px;
-        padding-top: 100px;
-        color: #172339
-    }
-
-    p.hero-text{
-        padding: 10px 20px 25px 25px;
-        max-width: 350px;
-        font-size: 18px;
-        color: #49566D;
-    }
-    .btn-section-one{
-        margin: 25px 0px 50px 10px;
-        
-    }
-  
-    .hero-image-m{
-        display: none;
-    }
-    .hero-image-l{
-        display: block;
-        max-width: 720px;
-        padding: 20px;
-        position: absolute;
-        top: 80px;
-        z-index: -100;
-        left: 320px;
-       
-    } 
-    
-    .quote-container{
-        position: relative;
-        top: 100px;
-        height: 500px;
-    }
-    .pattern-blur{
-       position: absolute;
-       top: 450px;
-       width: 900px;
-       height: auto;
-       z-index: -50;
-       left: 100px
-      
-    }
-    .jeremy-image-m{
-        display: none;
-    }
-    .jeremy-image-l{
-        display: block;
-        max-width: 327px;
-        position: absolute;
-        top: 418px;
-        float: left;
-    }
-
-    .second-section{
-        position: relative;
-        top:300px;
-    }
-
-    .pattern-curved-line-2{
-        position: absolute;
-        float: left;
-        left: 50%;
-        transform: translateX(-50%);
-        top: 150px;
-        min-width: 0px
-        
-        
-    }
-
-    
-    footer{
-       
-        top: 950px;
-    }
-
-
-    blockquote h2{
-        text-align: left;
-        padding: 75px 0px 0px 50px;
-        font-size: 2.5rem;
-    }
-    blockquote p, blockquote figcaption{
-        padding: 50px 0px 0px 50px;
-        width: 400px;
-        text-align: left;
-        font-size: 20px;
-
-    }
-
-    .quotes{
-        float: right;
-    }
+.first-section-curv img{
+    position: relative;
+    left: 198px;
+    width: 180px;
+    height: 30px;
+}
 
 
 
-    .footer-background{
-
-        bottom: -570px;
-    }
-
- }
-
-
- @media all and (min-width:1115px){
-    .first-section-curv img{
-        position: absolute;
-        top: 170px;
-        left: 420px;
-        width: 150px;
-        height: 30px;
-    }
-    aside{
-        position: absolute;
-        top: -80px;
-        right: -900px;
-        margin: auto;
-        text-align: center;
-        z-index: -200;
-    }
-    aside ul li {
-        display: block;
-        font-size: 20px;
-        list-style: none;
-        padding-top: 50px; 
-    }
-    .hero-image-l{
-        left: 438px
-    }
-    p.hero-text{
-        position: relative;
-        left: 100px;
-    }
-
-
-    h1{
-        position: relative;
-        left: 100px;  
-    }
-    .btn-section-one{
-        position: relative;
-        left: 100px;  
-    }
-    blockquote{
-        max-width: 100%;
-        margin: auto;
-        border-radius: 5px;;
-        
-    }
-    .quote-container{
-        max-width: 98%;
-        margin: auto;
-    }
-
-    .logo{
-        left: 100px;
-    }
-
-    .jeremy-image-l{
-        left: 100px;
-     }
-
-     blockquote h2, blockquote p, blockquote figcaption{
-        position: relative;
-        right: 90px;
-     }
-     
-    
- }
-
- 
