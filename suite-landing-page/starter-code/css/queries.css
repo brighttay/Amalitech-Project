@@ -418,12 +418,14 @@ footer ul li a img:hover{
         margin-right: 20px;
        }
 
+
        .second-section{
         position: absolute;
         top: 1052px;
         bottom: 0px;
         flex-direction: row;
-        height: 500px
+        height: 500px;
+       
     }
 
     .jeremy-image-m{
@@ -471,20 +473,21 @@ blockquote h2{
 }
 
 footer{
-bottom: -200px;
+    bottom: -200px;
+   
 }
 
 footer ul{
-    bottom: 100px;
+    bottom: 80px;
 }
 
 
 .footer-logo{
-    bottom: 100px
+    bottom: 80px
 }
 
 .copy-right{
-    bottom: 100px;
+    bottom: 80px;
 }
 
        
