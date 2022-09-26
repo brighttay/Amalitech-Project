@@ -398,8 +398,17 @@ footer ul li a img:hover{
 
     .btn-nav{
         margin-top: 10px;
+        width: 219px;
+        text-align: center;
+        padding: 15px;
+
     }
     
+    .btn-section-one{
+        width: 259px;
+        text-align: center;
+        padding: 20px;
+    }
     .logo a img{
         margin-top: 20px;
         
