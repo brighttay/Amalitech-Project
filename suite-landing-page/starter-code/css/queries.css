@@ -1,4 +1,5 @@
- 
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -7,30 +8,33 @@
     user-select: none;
 }
 
+body{
+    background-color: #FAF8F6;
+}
 nav{
-    width: 100%;
+    width: 90%;
+    margin: 24px auto 0px auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 20px;
     
 }
 
 .btn-nav{
     text-decoration: none;
-    padding: 10px;
-    width: 220px;
+    display: inline-block;
     border: 1px solid #172339;
     color: #172339;
-    text-align: center;
+    padding: 10px;
     border-radius: 10px;
-    font-size: 18px;
-    letter-spacing: -0.2px;
-    line-height: 32px;
+    font-style: normal;
     font-weight: 700;
-    transition: 0.5s;
-    
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: -0.14px;
+    color: #172339;
+    transition: 0.5s;  
 }
 
 .btn-nav:hover{
@@ -40,211 +44,248 @@ nav{
 
 .logo a img{
     margin-top: 5px;
-    width: 100px;
+    width: 81px;
 }
 
 .hero-image{
     display: none;
 }
 
-.first-section{
+.first-section{ 
+    width: 90%;
+    margin: 56px auto 0px auto;
     display: flex;
     flex-direction: column;
-    padding: 20px;
+}
+
+.first-section-curv img{
+    position: relative;
+    left: 170px;
+    max-width: 151.47px;
+    max-height: 19px;
 }
 
 h1{
-    font-size: 48px;
-    line-height: 56px;
-    letter-spacing: -0.5px;
-    padding-bottom: 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 44px;
+    letter-spacing: -0.527778px;
     font-weight: 400;
     color: #172339;
+    margin-top: 8.32px;
 }
 span{
     font-weight: 700;
 }
 
 .hero-text{
-    font-size: 18px;
-    line-height: 32px;
-    letter-spacing: 0px;
+   
+    font-style: normal;
     font-weight: 400;
-    padding-bottom: 20px;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.0888889px;
+    margin-top: 32px;
     color: #49566D;
     width: 350px
 }
 
 .btn-section-one{
     text-decoration: none;
-    padding: 15px;
-    width: 350px;
+    padding: 10px;
     background-color:#172339;
     color: #FAF8F6;
-    text-align: center;
     border-radius: 10px;
+    font-style: normal;
+    font-weight: 700;
     font-size: 18px;
-    letter-spacing: -0.2px;
     line-height: 32px;
-    font-weight: 700; 
-    margin-bottom: 20px;
+    letter-spacing: -0.18px;
+    margin-top: 47px;
     transition: 0.8s;
+    max-width: 256px;
+    text-align: center;
 }
 
 .btn-section-one:hover{
     background-image: linear-gradient(#A060FF,#CB30E3,#FFA84E);
 }
 
-.hero-image-m{
+.hero-image-s{
     display: block; 
     position: relative;
-    width: 100%;
-    margin: 0px auto 20px auto;
+    max-width: 343px;
+    margin: 24px auto 0 auto;
 }
 
+aside{
+    margin-top: 56px;
+}
 aside ul li{
     list-style: none;
     display: block;
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 32px;
 }
 
 aside h2{
-    font-size: 72px;
-    line-height: 78px;
-    letter-spacing: -1px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;    
     color: #172339;
     margin-top: 50px;
 }
 
 aside p{
-    font-size: 18px;
-    line-height: 32px;
-    letter-spacing: -0.2px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
     text-transform: uppercase;
     color: #49566D;
 }
 
-.first-section-curv img{
-    position: relative;
-    left: 198px;
-    max-width: 180px;
-    max-height: 30px;
-}
+
 
 .second-section{
     display: flex;
     flex-direction: column;
-    background-color: #172339;
-    position: relative;
-    top: 150px;
-    max-height: 900px;
     width: 100%;
-    border-radius: 10px;
+    margin-top: 56px;
+    position: relative;
 }
 .jeremy-image{
     display: none;
 }
+.pattern-blur{
+    display: block;
+    max-width: 200px;
+    margin: 123px auto;
+}
+ 
+.jeremy-image-s{
+    display: block;
+    position: absolute;
+    max-width: 252px;
+    margin: auto;
+    top: 0px;
+    left: 55px;
+    right: 36px;
+    z-index: 100;
+}
+
 
 .quote-container{
     width: 100%;
 }
 
 blockquote{
-    position: relative;
-    top: -320px;
-}
-blockquote .quote-text, blockquote figcaption{
-    text-align: center;
-    font-size: 20px;
-    font-weight: 400;
-    color: #FAF8F6;
-    line-height: 35px;
-    letter-spacing: 0px;
-    padding: 20px 20px;
-    max-width: 600px;
-    margin: auto;
-}
-blockquote h2{
-    font-size: 48px;
-    text-align: center;
-    line-height: 56px;
-    letter-spacing: -0.5px;
-    color: #FAF8F6;
-    font-weight: 400;
-}
-
-blockquote figcaption{
-    text-transform: uppercase;
+    position: absolute;
+    top: 181px;
+    background-color: #172339;
+    border-radius: 10px;
+    width: 100%;
 }
 
 .pattern-curved-line-2{
     display: block;
-    width: 100px;
-    margin: 10px auto;
-    position: relative;
-    top: -30px;
+    max-width: 49.27px;
+    margin: 261px  auto 0px auto;
+    
 }
 
-
-.pattern-blur{
-    display: block;
-    width: 200px;
-    margin: 20px auto;
+blockquote .quote-text{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: 0.09px;
+    color: #FAF8F6;
+    padding: 20px 20px;
+    max-width: 600px;
+    margin: auto;
+    
 }
 
-.jeremy-image-s{
-    display: block;
-    margin: 0px auto;
-    position: relative;
-    top: -400px;
+blockquote figcaption{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: -0.18px;
+    color: #FAF8F6;
+    padding: 20px 20px;
+    max-width: 600px;
+    margin: auto;
+    text-transform: uppercase;
 }
 
-.relative{
-    position: relative;
+blockquote figcaption cite{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 2.5px;
 }
+blockquote h2{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    letter-spacing: -0.416667px;
+    color: #FAF8F6;
+    margin-top: 37px;
+  
+}
+
 footer{
     width: 100%;
+    height: 420px;
     padding:50px;
     background-color: #F3EDE7;
-    position: absolute;
-    top: -50px;
-    bottom: -500px;
+    position: relative;
+    top: 300px;
     padding: 100px;
-    display: flex;
-    flex-direction: column;
     z-index: -300;
 
 }
 
 .footer-logo{
-    margin-top: 10px;
-    width: 100px;
-    margin: 10px auto;
+    max-width: 100px;
+    margin: 0px auto;
     position: absolute;
-    bottom: 130px;
+    top: 190px;
     left: 50%;
     transform: translateX(-50%);
 }
 
 .copy-right{
-    text-align: center;
-    font-size: 18px;
-    letter-spacing: 0px;
+    font-style: normal;
     font-weight: 400;
+    font-size: 15px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: 0.0833333px;
     color: #49566D;
     align-items: baseline;
     position: absolute;
-    bottom: 80px;
+    top: 255px;
     left: 50%;
     transform: translateX(-50%);
 }
 
 footer ul{
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 0px;
+    right: 50%;
+    transform: translateX(50%);
+    top: 320px;
 }
 footer ul li{
     list-style: none;
@@ -258,91 +299,55 @@ footer ul li a img:hover{
 }
 
 
-@media all and (max-width: 375px){
-    .btn-section-one{
-        width: 100%;
-    }
-}
 
 
-
-@media all and (max-width: 477px){
-    h1{
-        font-size: 2.3rem;
-    }
-
-    .first-section-curv img{
-        left: 140px;  
-    }
-
-    .hero-image-s{
-        display: block;
-        margin-bottom: 20px;
-    }
-    .hero-image-m{
-        display: none;   
-    }
-
-    aside h2{
-        font-size: 65px;  
-    }
-    
-    aside p{
-        font-size: 14px;
-    }
-}
-
-@media all and (min-width: 666px){
-    .hero-image-m{
-        max-width: 614px;
-    }
-}
-@media all and (min-width: 969px){
-   h1{
-        font-size: 72px;
-        line-height: 78px;
-        letter-spacing: -1px;
-   }
-
-   .hero-text{
-    width: 400px;
-   }
-
-   .hero-image-m{
+@media all and (min-width: 768px){
+  
+   .hero-image-s{
     display: none;
    }
 
    .hero-image-l{
-    max-width: 350px;
+    max-width: 281px;
     display: block;
-    position: relative;
-    top: -400px;
-    left: 490px;
+    position: absolute;
+    top: 176px;
+    right: 51px;
     z-index: -100;
-    margin-right: 20px;
    }
 
-   aside ul li{
-    display: inline-block;
-    }
-
-   aside{
-    margin: auto;
-    position: relative;
-    top: -400px;
-    margin-top: 50px;
-  }
-
-  .main-container{
-    position: relative;
-    width: 80%;
-    margin: auto;
-    top: 100px;
-    }
 
     .first-section-curv img{
-        left: 350px;  
+        max-width: 231.19px;
+        height: 29px;
+        left: 302px;
+        top: 122.68px; 
     }
+
+    h1{
+        position: absolute;
+        width: 573px;
+        height: 129px;
+        left: 50px;
+        top: 264px;
+        font-size: 56px;
+        line-height: 64px;
+        letter-spacing: -0.777778px;
+    }
+
+    .hero-text{
+        margin-top: 300px;
+    }
+
+    aside ul{
+        display: flex;
+        flex-direction: row;    
+        justify-content: space-around;
+    }
+
+
+
+
 
     .jeremy-image-s{
         display: none;
@@ -350,58 +355,97 @@ footer ul li a img:hover{
 
     .jeremy-image-m{
         display: block;
+        position: absolute;
+        max-width: 252px;
         margin: auto;
-        position: relative;
-        top: -500px;
-    }
-
-
-    .second-section{
-        position: static;
+        top: 0px;
+        left: 55px;
+        right: 36px;
+        z-index: 100;
     }
 
     blockquote{
-        top: -400px;
-    }
-
-    footer{
-        flex-direction: row;
-        justify-content: space-around;
-        position: absolute;
-        top: -200px;
-        bottom: -400px;
-
-    }
-
-    .footer-logo{
-        margin: 10px;
-        align-items: baseline;
-        left: 100px;
-        bottom: 100px
+    position: absolute;
+    top: 181px;
+    background-color: #172339;
+    border-radius: 10px;
+    width: 100%;
+    height: 725px;
+}
+    
+    footer .footer-logo{
+       left: 50px;
+       top: 290px;
     }
 
     footer ul{
-        bottom: 100px;
-        left: 100%;
-        right: -200px;
-        transform: translateX(-100%);
+        right: 65px;
+        top: 290px;
     }
-    .copy-right{
-        bottom: 100px;
+
+    footer .copy-right{
+        top: 290px;
     }
 
 }
 
 
-@media all and (min-width: 1326px){
-    aside{
-        position: relative;
-        top: -1150px;
-        bottom: -100px;
-        left: 470px;
+@media all and (min-width: 1320px){
+
+    nav{ 
+        width: 80%;
     }
-    aside ul li{
-        display: block;
+
+    .btn-nav{
+        margin-top: 10px;
+    }
+    
+    .logo a img{
+        margin-top: 20px;
+        
+    }
+
+    .first-section-curv img{
+        left: 400px;
+        width: 287px;
+        height: 32px;
+    }
+
+    h1{
+        width: 632px;
+        height: 156px;
+        left: 130px;
+        top: 264px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 72px;
+        line-height: 78px;
+        letter-spacing: -1px;
+    }
+
+    .hero-text{
+        position: relative;
+        left: 60px;
+        font-size: 18px;
+        line-height: 32px;
+        letter-spacing: 0.1px;
+        }
+
+    .btn-section-one{
+        position: relative;
+        left: 60px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 32px;
+        letter-spacing: -0.18px;
+    }
+        
+    aside ul{
+        flex-direction: column;
+        width: 160px;
+        position: absolute;
+        top: 300px;
+        right: 250px;
     }
 
     .hero-image-l{
@@ -409,10 +453,10 @@ footer ul li a img:hover{
        }
 
        .hero-image-xl{
-        width: 400px;
+        max-width: 350px;
         display: block;
         position: relative;
-        top: -400px;
+        top: -450px;
         left: 490px;
         z-index: -100;
         margin-right: 20px;
@@ -421,7 +465,7 @@ footer ul li a img:hover{
 
        .second-section{
         position: absolute;
-        top: 1052px;
+        top: 852px;
         bottom: 0px;
         flex-direction: row;
         height: 500px;
@@ -434,64 +478,69 @@ footer ul li a img:hover{
     .jeremy-image-l{
         display: block;
         position: absolute;
-        left: 100px;
-        width: 370px;
-        top: 950px;
+        left: 212px;
+        max-width: 370px;
+        top: 1030px;
         z-index: 100;
     }
 
     blockquote{
-        top: 30px;
-        right: 100px
+        width: 80%;
+        left: 50%;
+        right: 50%;
+        transform: translateX(-50%);
+        height: 545px;
+    }
+    blockquote h2{
+        position: absolute;
+        right: 14.57%;
+        top: calc(50% - 56px/2 - 156.5px);  
+        width: 299px;
+        font-size: 48px;
+        line-height: 56px;
+        letter-spacing: -0.5px;
     }
 
-   
+    blockquote .quote-text{
+        position: absolute;
+        top: 184px;
+        right: 125px;
+        text-align: left;
+        font-size: 20px;
+        line-height: 35px;
+        letter-spacing: 0.1px;
+        width: 350px;
 
-blockquote .quote-text, blockquote figcaption{
-    text-align: left;
-    width: 390px;
+    }
+
+    blockquote figcaption{
+        position: absolute;
+        top: 414px;
+        right: 270px;
+    }
     
-}
-blockquote h2{
-    text-align: left;
-}
+    blockquote figcaption cite{
 
-.pattern-curved-line-2{
-    position: relative;
-    top: 100px; 
-    left: -65%;;
+    }
 
-    margin: auto;
-    width: 70px
-}
+    footer{
+        top: 100px;
+    }
+  
+    footer .footer-logo{
+        left: 15%;
+        top: 360px;
+     }
+ 
+     footer ul{
+        right: 15%;
+        top: 360px;
+     }
+ 
+     footer .copy-right{
+         top: 360px;
+     }
 
-.pattern-blur{
-    display: block;
-    width: 500px;
-    height: 500px;
-    margin: -30px auto;
-}
-
-footer{
-    bottom: -200px;
-   
-}
-
-footer ul{
-    bottom: 80px;
-}
-
-
-.footer-logo{
-    bottom: 80px
-}
-
-
-.copy-right{
-    bottom: 80px;
-}
-
-       
 }
 
 
